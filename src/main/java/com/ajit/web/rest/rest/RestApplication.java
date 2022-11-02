@@ -9,14 +9,10 @@ import org.springframework.web.bind.annotation.*;
 @SpringBootApplication
 @RestController
 public class RestApplication {
-	
-	
-	  @Autowired
-	  private Environment environment;
-	
+		
 	 @RequestMapping("/home/{name}")
 	  public String home(@PathVariable String name) {
-	    return "Welcome " + name + " port " + Integer.parseInt(environment.getProperty("local.server.port")));
+	    return "Welcome " + name ;
 	  }
 	 
 	 @RequestMapping("/check")
