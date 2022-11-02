@@ -24,12 +24,7 @@ public class RestApplication {
 	    return "Hello, you are there in DB " + name;
 	  }
 	 
-	 
-	 @RequestMapping("/product")
-	  public String product(@RequestParam String name) {
-	    return "Hello, you are there in DB " + name;
-	  }
-	 
+		 
 	public static void main(String[] args) {
 		SpringApplication.run(RestApplication.class, args);
 	}
